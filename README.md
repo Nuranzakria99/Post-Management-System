@@ -21,12 +21,12 @@ npm install
 npm run dev
 Your application should now be running at http://localhost:3000.
 
-Assumptions :
+**Assumptions**
 The application is using JSONPlaceholder as the backend API. Since it's a mock API, data will not persist after the application is closed or reloaded.
 The form for editing and creating posts works on the assumption that all fields (title and body) are mandatory.
 Deleting a post doesn't actually remove the post from the data source, as we're interacting with a mock API (JSONPlaceholder).
 
-Challenges Faced 
+**Challenges Faced**
 Server-Side Rendering (SSR): Initially faced difficulties with SSR when trying to fetch and render data from the API.
 
 Handling API Responses: The DELETE operation was tricky to implement as JSONPlaceholder doesn't actually delete the post but returns a placeholder response. The UI was designed to reflect a successful deletion in the frontend.
@@ -37,7 +37,7 @@ TypeScript Issues: Ensuring that the types for API responses, including Post, we
 
 Managing Routing: Using Next.js Link and dynamic routes (/posts/edit/[postid]) required careful attention to ensure the correct post data was passed to the Edit Form.
 
-Approximate Time Spent :
+**Approximate Time Spent**
 within 6 to 7 hours
 
 
