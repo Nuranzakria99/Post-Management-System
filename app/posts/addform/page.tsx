@@ -1,9 +1,9 @@
-import Addform from '@/component/addfrom'
+import Addform from '@/component/forms/addfrom'
 import React from 'react'
 
 function AddFormPage() {
   return (
-    <div>
+    <div className='max-w-xl mx-auto p-5'>
       <Addform/>
     </div>
   )

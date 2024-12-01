@@ -1,7 +1,7 @@
 "use client"; 
 import React from "react";
 import { Form, Input, Button, notification } from "antd";
-import { addPost } from "../server/actions/addingpost";
+import { addPost } from "../../api/addingpost";
 
 interface FormValues {
   title: string;
