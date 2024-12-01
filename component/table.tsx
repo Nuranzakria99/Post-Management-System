@@ -5,8 +5,6 @@ import { ColumnType } from "antd/es/table";
 import { fetchPosts, Post } from "../api/postaction";
 import Actions from "../actions/buttonactions";
 
-
-
 const PostsPage: React.FC = async () => {
   const posts: Post[] = await fetchPosts(); 
 
@@ -37,7 +35,7 @@ const PostsPage: React.FC = async () => {
         dataSource={posts}
         columns={columns}
         rowKey="id"
-        className="w-full rounded-lg shadow-lg"
+        className="w-full rounded-lg shadow-xl"
       />
     </section>
   );
